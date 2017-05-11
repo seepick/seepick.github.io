@@ -1,0 +1,19 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>tryOrRethrow - common4k</title>
+<link rel="stylesheet" href="../../style.css">
+</HEAD>
+<BODY>
+<a href="../index.html">common4k</a>&nbsp;/&nbsp;<a href="index.html">com.github.christophpickl.kpotpourri.common.exception</a>&nbsp;/&nbsp;<a href=".">tryOrRethrow</a><br/>
+<br/>
+<h1>tryOrRethrow</h1>
+<a name="com.github.christophpickl.kpotpourri.common.exception$tryOrRethrow(com.github.christophpickl.kpotpourri.common.exception.tryOrRethrow.E, kotlin.Function0((kotlin.Unit)))"></a>
+<code><span class="keyword">fun </span><span class="symbol">&lt;</span><span class="identifier">E</span><span class="symbol">&gt;</span> <span class="identifier">E</span><span class="symbol">.</span><span class="identifier">tryOrRethrow</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.exception$tryOrRethrow(com.github.christophpickl.kpotpourri.common.exception.tryOrRethrow.E, kotlin.Function0((kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Invokes the given lambda, catches any Exception and init it as the cause of <code>this</code>.</p>
+<p>Usage:</p>
+<p>RuntimeException("my message").tryOrRethrow {
+somethingWhichThrows()
+}</p>
+</BODY>
+</HTML>

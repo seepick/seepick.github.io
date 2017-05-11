@@ -1,0 +1,93 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>MapAddable - common4k</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">common4k</a>&nbsp;/&nbsp;<a href="../index.html">com.github.christophpickl.kpotpourri.common.collection</a>&nbsp;/&nbsp;<a href=".">MapAddable</a><br/>
+<br/>
+<h1>MapAddable</h1>
+<code><span class="keyword">interface </span><span class="identifier">MapAddable</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">, </span><span class="identifier">V</span><span class="symbol">&gt;</span></code>
+<p>Limitted interface for a map, to be used as by delegation.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="add.html">add</a></td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$add(com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)/key">key</span><span class="symbol">:</span>&nbsp;<span class="identifier">K</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$add(com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)/value">value</span><span class="symbol">:</span>&nbsp;<span class="identifier">V</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Single add method without a default implementation, all other need not to be implemented.</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$add(kotlin.Pair((com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)))/pair">pair</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pair</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Add a pair: map.add("a" to 1)</p>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">add</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$add(kotlin.collections.Map.Entry((com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)))/entry">entry</span><span class="symbol">:</span>&nbsp;<span class="identifier">Entry</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Add a good old map entry.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="add-all.html">addAll</a></td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addAll</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$addAll(com.github.christophpickl.kpotpourri.common.collection.MapAddable((com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)))/add">add</span><span class="symbol">:</span>&nbsp;<span class="identifier">MapAddable</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code><br/>
+<code><span class="keyword">open</span> <span class="keyword">fun </span><span class="identifier">addAll</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$addAll(kotlin.collections.Map((com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)))/add">add</span><span class="symbol">:</span>&nbsp;<span class="identifier">Map</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Add all headers based on given map.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="plus-assign.html">plusAssign</a></td>
+<td>
+<code><span class="keyword">open</span> <span class="keyword">operator</span> <span class="keyword">fun </span><span class="identifier">plusAssign</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.collection.MapAddable$plusAssign(kotlin.Pair((com.github.christophpickl.kpotpourri.common.collection.MapAddable.K, com.github.christophpickl.kpotpourri.common.collection.MapAddable.V)))/pair">pair</span><span class="symbol">:</span>&nbsp;<span class="identifier">Pair</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Simplify usage, e.g.: "map += 1 to 2"</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-immutable-map.html">toImmutableMap</a></td>
+<td>
+<code><span class="keyword">abstract</span> <span class="keyword">fun </span><span class="identifier">toImmutableMap</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Map</span><span class="symbol">&lt;</span><span class="identifier">K</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span></code>
+<p>Convert to a read only map.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../../com.github.christophpickl.kpotpourri.common/kotlin.-any/enforce-all-branches-covered.html">enforceAllBranchesCovered</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Any</span><span class="symbol">.</span><span class="identifier">enforceAllBranchesCovered</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Kotlin workaround to enforce the compiler to check all branches even when not using the when as a statement rather an expression.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../../com.github.christophpickl.kpotpourri.common.io/kotlin.-any/println.html">println</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Any</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">println</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>If you are too lazy to wrap the expression with a common println(), just do it afterwards :)</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Inheritors</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../-key-ignoring-case-map/index.html">KeyIgnoringCaseMap</a></td>
+<td>
+<code><span class="keyword">class </span><span class="identifier">KeyIgnoringCaseMap</span><span class="symbol">&lt;</span><span class="identifier">V</span><span class="symbol">&gt;</span>&nbsp;<span class="symbol">:</span>&nbsp;<span class="identifier">MapAddable</span><span class="symbol">&lt;</span><span class="identifier">String</span><span class="symbol">,</span>&nbsp;<span class="identifier">V</span><span class="symbol">&gt;</span></code></td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,112 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>com.github.christophpickl.kpotpourri.common.string.kotlin.String - common4k</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">common4k</a>&nbsp;/&nbsp;<a href="../index.html">com.github.christophpickl.kpotpourri.common.string</a>&nbsp;/&nbsp;<a href=".">kotlin.String</a><br/>
+<br/>
+<h3>Extensions for kotlin.String</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="contains-all.html">containsAll</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">containsAll</span><span class="symbol">(</span><span class="keyword">vararg</span> <span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$containsAll(kotlin.String, kotlin.Array((kotlin.String)), kotlin.Boolean)/substrings">substrings</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$containsAll(kotlin.String, kotlin.Array((kotlin.String)), kotlin.Boolean)/ignoreCase">ignoreCase</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span>&nbsp;<span class="symbol">=</span>&nbsp;false<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Enhance the <code>contains</code> method receiving multiple substrings instead only of a single.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="cut-off-at.html">cutOffAt</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">cutOffAt</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$cutOffAt(kotlin.String, kotlin.Int, kotlin.String)/cutOffLength">cutOffLength</span><span class="symbol">:</span>&nbsp;<span class="identifier">Int</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$cutOffAt(kotlin.String, kotlin.Int, kotlin.String)/indicationSymbol">indicationSymbol</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span>&nbsp;<span class="symbol">=</span>&nbsp;" ..."<span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Ensure a maximum length but cutting of overlengthy part and append some indication symbol.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="htmlize.html">htmlize</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">htmlize</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Very basic HTML tag encapsulation and line break conversion.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="null-if-empty.html">nullIfEmpty</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">nullIfEmpty</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span><span class="symbol">?</span></code>
+<p>Returns <code>null</code> if <code>isEmpty()</code> evaluates to true.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="remove-pre-and-suffix.html">removePreAndSuffix</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">removePreAndSuffix</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$removePreAndSuffix(kotlin.String, kotlin.String)/search">search</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Combination of kotlin's <code>removePrefix</code> and <code>removeSuffix</code>.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="save-to-file.html">saveToFile</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">saveToFile</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$saveToFile(kotlin.String, java.io.File)/target">target</span><span class="symbol">:</span>&nbsp;<a href="http://docs.oracle.com/javase/6/docs/api/java/io/File.html"><span class="identifier">File</span></a><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Save the string to the given file using Guava. No validation at all.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="split-as-arguments.html">splitAsArguments</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">splitAsArguments</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">List</span><span class="symbol">&lt;</span><span class="identifier">String</span><span class="symbol">&gt;</span></code>
+<p>Splits by whitespace but respects the double quite (") symbol to combine big argument.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="times.html">times</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">times</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$times(kotlin.String, kotlin.Int)/count">count</span><span class="symbol">:</span>&nbsp;<span class="identifier">Int</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Duplicate this string a couple of times.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-boolean-lenient2.html">toBooleanLenient2</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">toBooleanLenient2</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span></code>
+<p>Inspired by org.jetbrains.kotlin.cli.common.toBooleanLenient()</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="to-boolean-lenient2-or-null.html">toBooleanLenient2OrNull</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">toBooleanLenient2OrNull</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Boolean</span><span class="symbol">?</span></code>
+<p>Inspired by org.jetbrains.kotlin.cli.common.toBooleanLenient()</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="wrap-if.html">wrapIf</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">wrapIf</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$wrapIf(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String)/condition">condition</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$wrapIf(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String)/wrappingLeft">wrappingLeft</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$wrapIf(kotlin.String, kotlin.Boolean, kotlin.String, kotlin.String)/wrappingRight">wrappingRight</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>If condition is met, wrap with left/right symbol.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="wrap-parenthesis-if.html">wrapParenthesisIf</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">String</span><span class="symbol">.</span><span class="identifier">wrapParenthesisIf</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.string$wrapParenthesisIf(kotlin.String, kotlin.Boolean)/condition">condition</span><span class="symbol">:</span>&nbsp;<span class="identifier">Boolean</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Delegates to wrapIf(Boolean, String, String).</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>

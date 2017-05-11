@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+<meta charset="UTF-8">
+<title>Io - common4k</title>
+<link rel="stylesheet" href="../../../style.css">
+</HEAD>
+<BODY>
+<a href="../../index.html">common4k</a>&nbsp;/&nbsp;<a href="../index.html">com.github.christophpickl.kpotpourri.common.io</a>&nbsp;/&nbsp;<a href=".">Io</a><br/>
+<br/>
+<h1>Io</h1>
+<code><span class="keyword">object </span><span class="identifier">Io</span></code>
+<p>Deals with System input/output redirecting.</p>
+<h3>Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="hit-enter-and-read-stdout.html">hitEnterAndReadStdout</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">hitEnterAndReadStdout</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$hitEnterAndReadStdout(kotlin.Function0((kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Simulates pressing ENTER and return output from stdout.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="read-from-std-out.html">readFromStdOut</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readFromStdOut</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$readFromStdOut(kotlin.Function0((kotlin.Unit)))/actionWhichWritesToStdOut">actionWhichWritesToStdOut</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Get printed output written to System.out as String.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="read-stdout-and-write-stdin.html">readStdoutAndWriteStdin</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">readStdoutAndWriteStdin</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$readStdoutAndWriteStdin(kotlin.String, kotlin.Function0((kotlin.Unit)))/text">text</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$readStdoutAndWriteStdin(kotlin.String, kotlin.Function0((kotlin.Unit)))/action">action</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">String</span></code>
+<p>Write given text to stdin, invoke action and return output from stdout.</p>
+</td>
+</tr>
+<tr>
+<td>
+<a href="write-to-std-in.html">writeToStdIn</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">writeToStdIn</span><span class="symbol">(</span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$writeToStdIn(kotlin.String, kotlin.Function0((kotlin.Unit)))/text">text</span><span class="symbol">:</span>&nbsp;<span class="identifier">String</span><span class="symbol">, </span><span class="identifier" id="com.github.christophpickl.kpotpourri.common.io.Io$writeToStdIn(kotlin.String, kotlin.Function0((kotlin.Unit)))/actionWhichReadsFromStdIn">actionWhichReadsFromStdIn</span><span class="symbol">:</span>&nbsp;<span class="symbol">(</span><span class="symbol">)</span>&nbsp;<span class="symbol">-&gt;</span>&nbsp;<span class="identifier">Unit</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Writes given text to System.in and invokes the action so it can read that text.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Properties</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../../com.github.christophpickl.kpotpourri.common/kotlin.-any/enforce-all-branches-covered.html">enforceAllBranchesCovered</a></td>
+<td>
+<code><span class="keyword">val </span><span class="identifier">Any</span><span class="symbol">.</span><span class="identifier">enforceAllBranchesCovered</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>Kotlin workaround to enforce the compiler to check all branches even when not using the when as a statement rather an expression.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<h3>Extension Functions</h3>
+<table>
+<tbody>
+<tr>
+<td>
+<a href="../kotlin.-any/println.html">println</a></td>
+<td>
+<code><span class="keyword">fun </span><span class="identifier">Any</span><span class="symbol">?</span><span class="symbol">.</span><span class="identifier">println</span><span class="symbol">(</span><span class="symbol">)</span><span class="symbol">: </span><span class="identifier">Unit</span></code>
+<p>If you are too lazy to wrap the expression with a common println(), just do it afterwards :)</p>
+</td>
+</tr>
+</tbody>
+</table>
+</BODY>
+</HTML>
